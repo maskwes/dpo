@@ -425,6 +425,9 @@ body {
 }
 .list-advantages__item.reverse .list-advantages__item__image {
   /* Блочная модель */
+  grid-column: 1;
+  margin-right: auto;
+  grid-row: 1;
 }
 
 .list-advantages__item__info {
@@ -584,7 +587,7 @@ body {
 .courses-wrapper {
   /* Блочная модель */
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 20px;
 }
 
@@ -653,13 +656,17 @@ body {
   font-weight: 600;
 }
 
+.wrapper__card-list__button {
+  text-align: center;
+}
+
 .course__list__item:not(:last-child) {
   /* Блочная модель */
   margin-right: 50px;
   margin-bottom: 20px;
 }
 
-.course__list__item:last-child {
+.course__list__item-forms {
   /* Блочная модель */
   margin-left: auto;
 }
@@ -971,6 +978,15 @@ body {
     grid-gap: 30px;
   }
 }
+@media (max-width: 1024px) {
+  .section-course__info__illustration {
+    display: none;
+  }
+
+  .course__list__item-forms {
+    margin-left: 0px;
+  }
+}
 @media (max-width: 767.9px) {
   .main {
     grid-gap: 80px;
@@ -1070,6 +1086,40 @@ body {
     padding: 15px;
     width: 100%;
     text-align: center;
+  }
+
+  .slaider-documents__item {
+    padding: 10px;
+    border: 1px solid;
+  }
+
+  .slaider-documents__item__heading {
+    border-bottom: 1px solid;
+  }
+
+  .section-feedback-big {
+    padding: 20px 0px;
+  }
+
+  .slaider-documents__item__description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .slaider-documents__item__image {
+    padding: 10px;
+  }
+
+  .feedback-container {
+    grid-template-columns: 1fr;
+  }
+
+  .list__mark {
+    grid-template-columns: 1fr;
+  }
+
+  .price {
+    padding: 0px;
   }
 }
 
