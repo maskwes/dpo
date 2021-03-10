@@ -1074,6 +1074,7 @@ body {
   }
 
   .main-heading {
+    padding-bottom: 40px;
     font-size: 38px;
     line-height: 120%;
   }
@@ -1101,6 +1102,12 @@ body {
   .link-login, .link-registation {
     display: none;
   }
+
+  .btn {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+  }
 }
 @media (max-width: 420px) {
   .container {
@@ -1114,7 +1121,7 @@ body {
 
   .main-heading {
     padding-bottom: 40px;
-    font-size: 28px;
+    font-size: 38px;
     line-height: 120%;
   }
 
@@ -1122,6 +1129,10 @@ body {
     padding-bottom: 40px;
     font-size: 28px;
     line-height: 120%;
+  }
+
+  .section-hero__info {
+    padding-bottom: 30px;
   }
 
   .list-advantages__item__header {
@@ -1151,12 +1162,6 @@ body {
 
   .card-list--main {
     grid-template-columns: 1fr;
-  }
-
-  .btn {
-    padding: 15px;
-    width: 100%;
-    text-align: center;
   }
 
   .slaider-documents__item {
