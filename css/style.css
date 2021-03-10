@@ -449,6 +449,7 @@ body {
 }
 
 .card-course__date {
+  padding-right: 5px;
   /* Типографика */
   font-size: 16px;
   font-weight: 500;
@@ -471,7 +472,7 @@ body {
 .list-advantages__item {
   /* Блочная модель */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 40px;
 }
 .list-advantages__item .list-advantages__item__image {
@@ -518,7 +519,8 @@ body {
 .list-partners__item {
   /* Блочная модель */
   display: inline-block;
-  padding: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .section-feedback__wrapper {
@@ -1108,6 +1110,23 @@ body {
     width: 100%;
     text-align: center;
   }
+
+  .list-advantages__item {
+    padding: 30px 15px;
+    border: 1px solid;
+  }
+
+  .list-advantages__item__header {
+    border-bottom: 1px solid;
+  }
+
+  .list-advantages__item__text {
+    padding-top: 20px;
+  }
+
+  .big-text {
+    font-size: 20px;
+  }
 }
 @media (max-width: 500px) {
   .container {
@@ -1121,7 +1140,7 @@ body {
 
   .main-heading {
     padding-bottom: 40px;
-    font-size: 38px;
+    font-size: 33px;
     line-height: 120%;
   }
 
@@ -1141,11 +1160,11 @@ body {
   }
 
   .link--border {
-    padding: 10px 20px;
+    padding: 20px;
   }
 
   .link {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .section-feedback__wrapper {
