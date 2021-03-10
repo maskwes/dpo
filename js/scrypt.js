@@ -10,11 +10,14 @@ $(document).ready(function(){
     });
 
     $('.slaider-documents').slick({
-
+        arrows: false,
+        dots: true
     });
 
     $('.wrapper-speakers').slick({
         infinite: true,
+        arrows: false,
+        dots: true,
         responsive: [
             {
                 breakpoint: 2048,

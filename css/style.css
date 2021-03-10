@@ -1164,8 +1164,6 @@ body {
   .container {
     max-width: 500px;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
   }
 
   .main {
@@ -1227,10 +1225,6 @@ body {
 
   .price {
     padding: 0px;
-  }
-
-  .container {
-    display: block;
   }
 }
 
